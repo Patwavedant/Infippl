@@ -50,8 +50,7 @@ body {
 a,
 a:visited {
 	outline: none;
-	color: #ffffff5b;
-	background-color: #ffffff5b;;
+	color: #f308fb5b;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -59,7 +58,10 @@ a:visited {
 	transition: all 0.3s ease-in-out;
 }
 
-
+a:hover,
+a:focus {
+	color: white;
+}
 
 /* Typography
 --------------------------------------------------------------------- */
@@ -547,7 +549,7 @@ main .site-header .logo a {
 	width: 116px;
 	height: 116px;
 	background: url("../images/logo/logo.png") no-repeat;
-	background-size:contain;
+	background-size: contain;
 }
 
 @media only screen and (max-width:900px) {
@@ -741,7 +743,6 @@ main .site-header .logo a {
 	line-height: 30px;
 	padding: 12px 15px 12px 20px;
 	border-radius: 3px 0 0 3px;
-	border-color: #fb08ef70;
 	background: rgba(255, 255, 255, 0.25);
 	width: 70%;
 }
@@ -754,16 +755,19 @@ main .site-header .logo a {
 	height: 54px;
 	padding: 12px 25px 12px 25px;
 	border-radius: 0 3px 3px 0;
-	border-color: #fb08ef70;
-	background: black;
+	background: white;
 	width: 30%;
 	text-align: center;
-	color: #fb08ef70;
+	color: black;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+#mc-signup input[type="submit"]:hover {
+	background: #fbca08;
 }
 
 #mc-signup label {
@@ -1371,6 +1375,7 @@ main .site-header .logo a {
 }
 
 @media only screen and (max-width:600px) {
+
 	#mod-map #map-zoom-in,
 	#mod-map #map-zoom-out {
 		margin-right: 35px;
@@ -1379,6 +1384,7 @@ main .site-header .logo a {
 }
 
 @media only screen and (max-width:400px) {
+
 	#mod-map #map-zoom-in,
 	#mod-map #map-zoom-out {
 		margin-right: 25px;
@@ -1541,6 +1547,4 @@ footer a:focus {
 	.footer-social li {
 		margin: 0 6px;
 	}
-
 }
-
